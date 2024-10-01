@@ -36,9 +36,8 @@ public class Artwork {
     // TODO: Define printInfo() method
     //       Call the printInfo() method in Artist.java to print an artist's information
     public void printInfo(){
-        System.out.println(title);
-        System.out.println(yearCreated);
         artist.printInfo();
+        System.out.println("Title: " + title + ", " + yearCreated);
     }
  }
  

@@ -28,9 +28,14 @@ public class Artist {
     }
  
     public void printInfo(){
-        System.out.println(birthYear);
-            if(deathYear != -1 ){
-               System.out.println(deathYear);
-            }
+        if(deathYear == -1 && birthYear == -1){
+            System.out.println("Artist: " + artistName + " (unknown)" );
+        }
+        else if(deathYear != -1  && birthYear != -1){
+            System.out.println("Artist: " + artistName + " (" + birthYear + " to " + deathYear +")" );
+        }
+        else {
+            System.out.println("Artist: " + artistName + " (" + birthYear + " to present)" );   
+        }
     }
  }

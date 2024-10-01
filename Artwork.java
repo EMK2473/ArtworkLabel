@@ -1,9 +1,17 @@
 public class Artwork {
     // TODO: Declare private fields - title, yearCreated
+    private String title;
+    private int yearCreated;
     
     // TODO: Declare private field artist of type Artist 
- 
+    private Artist artist;    
+    
     // TODO: Define default constructor
+    public Artwork() {
+        this.title = "unknown";
+        this.yearCreated = -1;
+        this.artist = new Artist();
+    }
     
     // TODO: Define get methods: getTitle(), getYearCreated()
  

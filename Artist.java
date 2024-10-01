@@ -13,7 +13,11 @@ public class Artist {
  
     // TODO: Define second constructor to initialize 
     //       private fields (artistName, birthYear, deathYear)
-    
+    public Artist(String name, int yearBorn, int yearDied) {
+      this.artistName = name;
+      this.birthYear = yearBorn;
+      this.deathYear = yearDied;
+   }
     
     // TODO: Define get methods: getName(), getBirthYear(), getDeathYear()
  

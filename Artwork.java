@@ -29,12 +29,16 @@ public class Artwork {
     public Artwork(String artTitle, int artYearCreated, Artist artist) {
         this.title = artTitle;
         this.yearCreated = artYearCreated;
-        this.artist = artist
+        this.artist = artist;
 
     }
  
     // TODO: Define printInfo() method
-    //       Call the printInfo() method in Artist.java to print an artist's information                                                                                          
- 
+    //       Call the printInfo() method in Artist.java to print an artist's information
+    public void printInfo(){
+        System.out.println(title);
+        System.out.println(yearCreated);
+        artist.printInfo();
+    }
  }
  

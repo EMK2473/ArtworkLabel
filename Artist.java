@@ -34,5 +34,12 @@ public class Artist {
  
     // TODO: Define printInfo() method
     //       If deathYear is entered as -1, only print birthYear
+    public void printInfo(){
+        System.out.println(birthYear);
+            if(deathYear != -1 ){
+               System.out.println(deathYear);
+            }
+    }
+    
  
  }
